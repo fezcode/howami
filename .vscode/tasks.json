@@ -1,0 +1,25 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Howami Run",
+            "type": "shell",
+            "command": "D:/Apps/Python/Python310/python.exe d:/Workspace/howami/main.py -i${input:interval}",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ],
+    "inputs": [
+        {
+            "id": "interval",
+            "description": "Interval",
+            "default": "30",
+            "type": "promptString"
+        },
+    ]
+}
